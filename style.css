@@ -1,0 +1,18 @@
+#links {
+  padding-top: 8px;
+  padding-bottom: 20px;
+  height:60px;
+}
+#icon{
+  align-content: center;
+  width: 40px;
+  height: 40px;
+  transition: 0.5s;
+  transition-delay: 0.00001s;
+}
+#icon:hover {
+  align-content: center;
+  height: 50px;
+  width: 50px;
+}
+  
