@@ -21,24 +21,30 @@
   <header class="w3-display-container w3-content w3-display-middle" style="width:100%">
     <div class="w3-display-middle w3-passing-large w3-center w3-panel" style="width:100%">
       <div class="relative-icon">
-        <img src="C:Users/dima_/Untitled Folder/portfolio_clean/dima028.github.io/img/icon/underconstruction.gif" alt="Under Construction" width="170" class="image">
+        <img src="img/icon/underconstruction.gif" alt="Under Construction" width="170" class="image">
       </div>
     </div>
 
 
     <div class="relative-text2">
-      <h6 class="w3-display-middle w3-text-grey w3-center" style="font-size:0.75vw"><i>This site is under construction.</i></h6>
+      <h6 class="w3-hide-small w3-display-middle w3-text-grey w3-center" style="font-size:0.75vw"><i>This site is under construction.</i></h6>
     </div>
 
     <div class="relative-text">
       <div class="w3-display-middle w3-text-light-grey w3-center"> <!--class="w3-border"-->
-        <h1 class="w3-xxxlarge">DIMA <b>ISMAIL</b></h1>
-        <h5 class="w3-hide-large" >DIMA ISMAIL</h5>
-        <div class="w3-container">
-          <h3 class="w3-animate-right"><b>Software Developer</b></h3>
-          <h3 class="w3-animate-right"><b>Engineering Graduate</b></h3>
-          <h3 class="w3-animate-right"><b>ENFP-A: "Campaigner"</b></h3>
-          <h3 class="w3-animate-right"><b>Hackathon Enthusiast</b></h3>
+        <h1 class="w3-xxxlarge w3-hide-small">DIMA <b>ISMAIL</b></h1>
+        <h5 class="w3-hide-large w3-xxlarge" >DIMA ISMAIL</h5>
+        <div class="w3-container w3-hide-small">
+          <h3 class="big w3-animate-right"><b>Software Developer</b></h3>
+          <h3 class="big w3-animate-right"><b>Engineering Graduate</b></h3>
+          <h3 class="big w3-animate-right"><b>ENFP-A: "Campaigner"</b></h3>
+          <h3 class="big w3-animate-right"><b>Hackathon Enthusiast</b></h3>
+        </div>
+        <div class="w3-container w3-hide-large">
+          <h4 class="sm w3-animate-right"><b>Software Developer</b></h4>
+          <h4 class="sm w3-animate-right"><b>Engineering Graduate</b></h4>
+          <h4 class="sm w3-animate-right"><b>ENFP-A: "Campaigner"</b></h4>
+          <h4 class="sm w3-animate-right"><b>Hackathon Enthusiast</b></h4>
         </div>
         
         <script>
@@ -47,13 +53,16 @@
         
         function carousel() {
           var i;
-          var x = document.getElementsByClassName("w3-animate-right");
+          var x = document.getElementsByClassName("big w3-animate-right");
+          var y = document.getElementsByClassName("sm w3-animate-right");
           for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";  
+            y[i].style.display = "none";
           }
           myIndex++;
           if (myIndex > x.length) {myIndex = 1}    
           x[myIndex-1].style.display = "block";  
+          y[myIndex-1].style.display = "block";
           setTimeout(carousel, 2000); // Change image every 2 seconds
         }
         </script>  
@@ -63,15 +72,49 @@
 
   <body>
     <div class="bg"></div>
-      <!-- End page content -->
+    <div class="w3-row w3-bottom w3-center w3-hide-small">
+      <div class="w3-col w3-tiny" style="width:41%; padding-bottom:25px">test</div>
+      <div class="w3-col" style="width:6%">
+        <a href="https://devpost.com/dismail"><img src="img/logo/devpost.png" id="icon" alt="devpost_icon" class="w3-image w3-hover-opacity"></a>
+      </div>
+      <div class="w3-col" style="width:6%">
+        <a href="https://www.linkedin.com/in/dimaismail"><img src="img/logo/linkedin.png" id="icon2" alt="linkedin_icon" class="w3-image w3-hover-opacity"></a>
+      </div>
+      <div class="w3-col" style="width:6%">
+        <a href="https://www.github.com/dima028"><img src="img/logo/github.png" id="icon3" alt="github_icon" class="w3-image w3-hover-opacity"></a>
+      </div>
+      <div class="w3-col" style="width:41%"></div>
+    </div>  
+    
 
-    <footer class="w3-container w3-blue-grey w3-bottom w3-center" id="links"> 
+    <div class="w3-row w3-bottom w3-center w3-hide-large">
+      <div class="w3-col w3-tiny" style="width:29%; padding-bottom:25px">t</div>
+      <div class="w3-col" style="width:14%">
+        <a href="https://devpost.com/dismail"><img src="img/logo/devpost.png" id="icon" alt="devpost_icon" class="w3-image w3-hover-opacity"></a>
+      </div>
+      <div class="w3-col" style="width:14%">
+        <a href="https://www.linkedin.com/in/dimaismail"><img src="img/logo/linkedin.png" id="icon2" alt="linkedin_icon" class="w3-image w3-hover-opacity"></a>
+      </div>
+      <div class="w3-col" style="width:14%">
+        <a href="https://www.github.com/dima028"><img src="img/logo/github.png" id="icon3" alt="github_icon" class="w3-image w3-hover-opacity"></a>
+      </div>
+      <div class="w3-col" style="width:29%"></div>
+    </div> 
+    <!-- <div class="w3-row w3-bottom">
+      <div class="w3-col w3-green w3-container" style="width:15%"><p>15%</p></div>
+      <div class="w3-col w3-dark-grey w3-container" style="width:35%"><p>35%</p></div>
+      <div class="w3-col w3-red w3-container" style="width:10%"><p>10%</p></div>
+      <div class="w3-col w3-blue w3-container" style="width:30%"><p>30%</p></div>
+      <div class="w3-col w3-purple w3-container" style="width:10%"><p>10%</p></div>
+    </div> -->
+      <!-- End page content -->
+    <!-- <footer class="w3-container w3-bottom w3-center" id="links"> 
       <a href="https://devpost.com/dismail"><img src="img/logo/devpost.png" id="icon" alt="devpost_icon" class="w3-image w3-hover-opacity"></a>
       <img class="w3-image w3-hover-opacity" width="10">
       <a href="https://www.linkedin.com/in/dimaismail"><img src="img/logo/linkedin.png" id="icon" alt="linkedin_icon" class="w3-image w3-hover-opacity"></a>
       <img class="w3-image w3-hover-opacity" width="10">
       <a href="https://www.github.com/dima028"><img src="img/logo/github.png" id="icon" alt="github_icon" class="w3-image w3-hover-opacity"></a>
-    </footer>
+    </footer> -->
 
   </body>
 </html>
