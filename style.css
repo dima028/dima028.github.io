@@ -22,10 +22,28 @@ div.relative-text2 {
   /* top: 10px; */
 }
 
+div.devpo {
+  position: relative;
+  right: 100px;
+  /* top: 10px; */
+}
+
+div.linke {
+  position: relative;
+  /* bottom: 45px; */
+  /* top: 10px; */
+}
+
+div.githu {
+  position: relative;
+  left: 100px;
+  /* top: 10px; */
+}
+
 #links {
-  padding-top: 8px;
+  /* padding-top: 8px; */
   padding-bottom: 15px;
-  height:50px;
+  /* height:50px; */
 }
 #body {
   height: 100%;
@@ -43,6 +61,30 @@ div.relative-text2 {
   transition-delay: 0.00001s;
 }
 #icon:hover {
+  align-content: center;
+  height: 35px;
+  width: 35px;
+}
+#icon2{
+  align-content: center;
+  width: 30px;
+  height: 30px;
+  transition: 0.5s;
+  transition-delay: 0.00001s;
+}
+#icon2:hover {
+  align-content: center;
+  height: 35px;
+  width: 35px;
+}
+#icon3{
+  align-content: center;
+  width: 30px;
+  height: 30px;
+  transition: 0.5s;
+  transition-delay: 0.00001s;
+}
+#icon3:hover {
   align-content: center;
   height: 35px;
   width: 35px;
