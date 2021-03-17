@@ -20,68 +20,72 @@
       <link rel="stylesheet" href="style.css">
   </head>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top w3-bar w3-light-grey w3-padding w3-card">
-  <div style="max-width:800px;margin:auto">
-    <div class="w3-left">
-      <a href="#"><img src="android-chrome-256x256.png" width="43" height="40"></a>
-    </div>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top w3-bar w3-light-grey w3-padding w3-card">
+    <div style="max-width:800px;margin:auto">
+      <div class="w3-left">
+        <a href="#"><img src="android-chrome-256x256.png" width="43" height="40"></a>
+      </div>
 
-    <div class="w3-right w3-row w3-tiny" style="width:29%; padding-top:5px">
-      <div class="w3-quarter">
-        <a href="https://twitter.com/dismail_"><img src="img/logo/twitter.png " id="icon" alt="twitter_icon" class="w3-image w3-hover-opacity"></a>
-      </div>
-      <div class="w3-quarter">
-        <a href="https://devpost.com/dismail"><img src="img/logo/devpost.png" id="icon" alt="devpost_icon" class="w3-image w3-hover-opacity"></a>
-      </div>
-      <div class="w3-quarter">
-        <a href="https://www.linkedin.com/in/dimaismail"><img src="img/logo/linkedin.png" id="icon2" alt="linkedin_icon" class="w3-image w3-hover-opacity"></a>
-      </div>
-      <div class="w3-quarter">
-        <a href="https://www.github.com/dima028"><img src="img/logo/github.png" id="icon3" alt="github_icon" class="w3-image w3-hover-opacity"></a>
+      <div class="w3-right w3-row w3-tiny" style="width:29%; padding-top:5px">
+        <div class="w3-quarter">
+          <a href="https://twitter.com/dismail_"><img src="img/logo/twitter.png " id="icon" alt="twitter_icon" class="w3-image w3-hover-opacity"></a>
+        </div>
+        <div class="w3-quarter">
+          <a href="https://devpost.com/dismail"><img src="img/logo/devpost.png" id="icon" alt="devpost_icon" class="w3-image w3-hover-opacity"></a>
+        </div>
+        <div class="w3-quarter">
+          <a href="https://www.linkedin.com/in/dimaismail"><img src="img/logo/linkedin.png" id="icon2" alt="linkedin_icon" class="w3-image w3-hover-opacity"></a>
+        </div>
+        <div class="w3-quarter">
+          <a href="https://www.github.com/dima028"><img src="img/logo/github.png" id="icon3" alt="github_icon" class="w3-image w3-hover-opacity"></a>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-
-  <!-- Header -->
-  <header class="w3-display-container w3-content w3-display-middle" style="width:100%">
-    <div class="relative-text">
-      <div class="w3-display-middle w3-text-light-grey w3-center"> <!--class="w3-border"-->
-        <h1 class="w3-xxxlarge w3-hide-small">DIMA <b>ISMAIL</b></h1>
-        <div class="w3-container w3-hide-small">
-          <h3 class="big w3-animate-right"><b>Software Developer</b></h3>
-          <h3 class="big w3-animate-right"><b>Engineering Graduate</b></h3>
-          <h3 class="big w3-animate-right"><b>ENFP-A: "Campaigner"</b></h3>
-          <h3 class="big w3-animate-right"><b>Hackathon Enthusiast</b></h3>
-        </div>
-        
-        <script>
-        var myIndex = 0;
-        carousel();
-        
-        function carousel() {
-          var i;
-          var x = document.getElementsByClassName("big w3-animate-right");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          myIndex++;
-          if (myIndex > x.length) {myIndex = 1}    
-          x[myIndex-1].style.display = "block";  
-          setTimeout(carousel, 2000); // Change image every 2 seconds
-        }
-        </script>  
-      </div>
-    </div>
-  </header>
 
   <body>
-    <div class="bg"></div>
-    <div class="w3-container w3-light-grey">
-      <div class="w3-container w3-light-grey w3-content w3-center w3-padding-64" style="max-width:800px">
-        <h2 class="w3-wide w3-text-dark-grey"><b>Work Experience</b></h2>
+    <div>
+      <div class = "bg">
+        <div class="w3-row w3-display-container w3-content w3-middle w3-padding-64" style="max-width:800px">
+          <div class="w3-twothird w3-text-grey w3-center" style="display: flex;
+          justify-content: center;
+          align-content: center;
+          flex-direction: column;">
+            <h1 class="w3-xxxlarge">DIMA<b>ISMAIL</b></h1>
+            <div class="w3-container">
+              <h3 class="big w3-animate-right"><b>Software Developer</b></h3>
+              <h3 class="big w3-animate-right"><b>Engineering Graduate</b></h3>
+              <h3 class="big w3-animate-right"><b>ENFP-A: "Campaigner"</b></h3>
+              <h3 class="big w3-animate-right"><b>Hackathon Enthusiast</b></h3>
+            </div>
+            
+            <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("big w3-animate-right");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+            </script>  
+          </div>
+          <div class="w3-third">
+            <img src="img/me.png" style="width:100%; vertical-align:bottom">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w3-container w3-white">
+      <div class="w3-container w3 w3-content w3-center w3-padding-64" style="max-width:800px">
+        <h2 class="w3-wide w3-text-grey"><b>Work Experience</b></h2>
         <p class="w3-opacity"><i>Internships & Co-op Placements</i></p>
 
         <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
@@ -89,43 +93,43 @@
             <div class="w3-container" style="height: 160px;">
               <p></p>
               <img src="img/logo/caseware.png" alt="New York" style="width:100%" class="w3-hover-opacity">
-              <p style="font-size: 13px; margin-bottom:0;"><b>Software Developer</b></p>
-              <p style="font-size: 10px; margin-top:0;margin-bottom:0">CaseWare International Inc</p>
-              <p style="font-size: 9px; margin-top:0;" class="w3-opacity">Toronto, Ontario</p>
+              <p class="w3-text-grey" style="font-size: 13px; margin-bottom:0;"><b>Software Developer</b></p>
+              <p class="w3-text-grey" style="font-size: 10px; margin-top:0;margin-bottom:0">CaseWare International Inc</p>
+              <p class="w3-text-grey" style="font-size: 9px; margin-top:0;" class="w3-opacity">Toronto, Ontario</p>
             </div>
           </div>
           <div class="w3-quarter w3-margin-bottom ">
             <div class="w3-container" style="height: 160px;">
               <p></p>
               <img src="img/logo/guelph.png" alt="New York" style="width:100%" class="w3-hover-opacity">
-              <p style="font-size: 13px; margin-bottom:0"><b>Undergraduate Research Student</b></p>
-              <p style="font-size: 10px; margin-top:0;margin-bottom:0">University of Guelph</p>
-              <p style="font-size: 10px; margin-top:0" class="w3-opacity">Guelph, Ontario</p>
+              <p class="w3-text-grey" style="font-size: 13px; margin-bottom:0"><b>Undergraduate Research Student</b></p>
+              <p class="w3-text-grey" style="font-size: 10px; margin-top:0;margin-bottom:0">University of Guelph</p>
+              <p class="w3-text-grey" style="font-size: 10px; margin-top:0" class="w3-opacity">Guelph, Ontario</p>
             </div>
           </div>
           <div class="w3-quarter w3-margin-bottom">
             <div class="w3-container" style="height: 160px;">
               <p></p>
               <img src="img/logo/sri.png" alt="Paris" style="width:100%" class="w3-hover-opacity">
-              <p style="font-size: 13px; margin-bottom:0"><b>Co-op Student</b></p>
-              <p style="font-size: 10px; margin-top:0;margin-bottom:0">Sunnybrook Health </p>
-              <p style="font-size: 10px; margin-top: 0;margin-bottom: 0">Sciences Centre</p>
-              <p style="font-size: 10px; margin-top:0" class="w3-opacity">Toronto, Ontario</p>
+              <p class="w3-text-grey" style="font-size: 13px; margin-bottom:0"><b>Co-op Student</b></p>
+              <p class="w3-text-grey" style="font-size: 10px; margin-top:0;margin-bottom:0">Sunnybrook Health </p>
+              <p class="w3-text-grey" style="font-size: 10px; margin-top: 0;margin-bottom: 0">Sciences Centre</p>
+              <p class="w3-text-grey" style="font-size: 10px; margin-top:0" class="w3-opacity">Toronto, Ontario</p>
             </div>
           </div>
           <div class="w3-quarter w3-margin-bottom">
-            <div class="w3-container" style="height: 160px;">
+            <div class="w3-container w3-grey" style="height: 140px;">
               <p></p>
               <img src="img/logo/guelph.png" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
-              <p style="font-size: 13px; margin-bottom:0"><b>Work-Study Student</b></p>
-              <p style="font-size: 10px; margin-top:0;margin-bottom:0">University of Guelph</p>
-              <p style="font-size: 10px; margin-top:0" class="w3-opacity">Guelph, Ontario</p>
+              <p class="w3-text-grey" style="font-size: 13px; margin-bottom:0"><b>Work-Study Student</b></p>
+              <p class="w3-text-grey" style="font-size: 10px; margin-top:0;margin: bottom 1px;">University of Guelph</p>
+              <p class="w3-text-grey" style="font-size: 10px; margin-top:0" class="w3-opacity">Guelph, Ontario</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="w3-container w3-white">
+    <div class="w3-container w3-light-grey">
       <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
         <h2 class="w3-wide w3-text-grey"><b>Projects</b></h2>
         <p class="w3-opacity"><i>Personal Projects & Previous Hackathon Pitches</i></p>
