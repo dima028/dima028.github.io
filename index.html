@@ -147,6 +147,11 @@
       height: 100%;
     }
   </style>
+  <script>
+    $(document).ready(function(){
+        $("#myModal").modal('show');
+    });
+  </script>
 </head>
 
 <body>
@@ -176,8 +181,7 @@
         <h5 class="modal-title  .modal-dialog-centered" style="color: #5a5a5a; font-size:medium;"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp&nbsp Construction Ahead!</h5>
       </div>
       <div class="modal-body" style="color: #5a5a5a;">
-        <p>This site is under construction. Kindly avoid getting emotionally (or otherwise) invested in any components as they are subject to change at any given commit.</p>
-        <p style="text-align: right;">Love, Dima &nbsp<i class="fa fa-heart" aria-hidden="true"></i>&nbsp</p>
+        <p>This site is under construction. Some components may be incomplete, unoptimized for smartphone or small-screen use, or otherwise subject to change. Thank you for your patience.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Dismiss</button>
@@ -284,7 +288,6 @@
     </div>
   </div>
 </div>
-
 
 <div class="container-fluid container bg-4 text-center" id="what" style="padding-bottom: 10vh">    
   <h3 style="letter-spacing: 4px;">What I've Made</h3><br>
