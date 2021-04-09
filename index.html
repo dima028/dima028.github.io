@@ -1,120 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
   <title>Dima Ismail</title>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <body>
-  <!--Head-->
-  <head>
-      <link rel="apple-touch-icon" sizes="180x180" href="C:\Users\dima_\Untitled Folder\portfolio_clean\dima028.github.io\apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="C:\Users\dima_\Untitled Folder\portfolio_clean\dima028.github.io\favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="C:\Users\dima_\Untitled Folder\portfolio_clean\dima028.github.io\favicon-16x16.png">
-      <link rel="manifest" href="C:\Users\dima_\Untitled Folder\portfolio_clean\dima028.github.io\site.webmanifest">
-      <link rel="mask-icon" href="C:\Users\dima_\Untitled Folder\portfolio_clean\dima028.github.io\safari-pinned-tab.svg" color="#5bbad5">
-      <meta name="msapplication-TileColor" content="#da532c">
-      <meta name="theme-color" content="#ffffff">
-      <link rel="stylesheet" href="style.css">
-  </head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff00">
+  <style>
+    body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+    }
+    p {
+    font-size: 16px;
+    margin-bottom:0;
+    padding: 0;
+    margin-top: 0;
+    }
+    .margin {margin-bottom: 45px;}
+    .bg-1 { 
+      background-color: #ecf0fc;
+      color: #5a5a5a;
+    }
+    .bg-2 { 
+      background-color: #e2eafc;
+      color: #5a5a5a;
+    }
+    .bg-3 { 
+      background-color: #ccdbfd;
+      color: #5a5a5a;
+    }
+    .bg-4 { 
+      background-color: #b6ccfe;
+      color: #5a5a5a;
+    }
+    .bg-5 { 
+      background-color: #003049;
+      color: #edf2fb;
+    }
+    .container-fluid {
+      padding-top: 2vh;
+      padding-bottom: 0;
+    }
+    .container {
+      padding-left: 25vw;
+      padding-top: 7vh;
+      padding-right: 25vw;
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
+    .modal {
+    position: absolute;
+    top: 20%;
+    }
+    .navbar {
+      border: 0;
+      background-color: #ecf0fc;
+      display: flex;
+      justify-content: space-between;
+      opacity: 0.9;
+      z-index: 9999;
+      margin: 0 auto;
+      font-size: small;
+    }
+    .navbar-nav li a:hover, .navbar-nav li.active a {
+      background-color: #ffffff00 !important;
+    }
+    .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+    }
+    .logo-image img{
+      max-width: 7vw;
+      max-height: 7vh;
+      margin-top: -6px;
+    }
+    #icon{
+      max-width: 4vw;
+      min-width: 10px;
+      max-height: 4vh;
+      min-height: 10px;
+      transition: 0.3s;
+      transition-delay: 0.00001s;
+    }
+    #icon:hover {
+      opacity: 0.6;
+    }
+    #me{
+      max-width: 100vw;
+      min-width: 30px;
+      max-height: 100vh;
+      min-height: 60px;
+    }
+    #footer {
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      margin-bottom: 0px;
+    }
+    .row {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+    .row.display-flex {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .row.display-flex > [class*='col-'] {
+      display: flex;
+      flex-direction: column;
+    }
+    *, ::after, ::before {
+      box-sizing: border-box;
+    }
+    root {
+      --breakpoint-xs: 0;
+      --breakpoint-sm: 576px;
+      --breakpoint-md: 768px;
+      --breakpoint-lg: 992px;
+      --breakpoint-xl: 1200px;
+    }
+    .thumbnail {
+      padding: 15px;
+      background-color: #e2eafc;
+      border: none;
+      border-radius: 0;
+      margin-bottom: 0;
+      height: 100%;
+    }
+  </style>
+</head>
 
-  <!-- Header -->
-  <header class="w3-display-container w3-content w3-display-middle" style="width:100%">
-    <div class="w3-display-middle w3-passing-large w3-center w3-panel" style="width:100%">
-      <div class="relative-icon">
-        <img src="img/icon/underconstruction.gif" alt="Under Construction" width="170" class="image">
+<body>
+  <!-- Navbar (sit on top) -->
+  <nav class="navbar navbar-fixed-top scrolling-navbar">
+    <div class="container" style="padding-top: 0; padding-bottom: 0;">
+      <div>
+        <ul class="nav navbar-nav nav-bar-left">
+          <li><a href="#" ><img src="android-chrome-192x192.png" id="icon"></a></li>
+        </ul>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#who" style="letter-spacing: 4px;">WHO</a></li>
+          <li><a href="#where" style="letter-spacing: 4px;">WHERE</a></li>
+          <li><a href="#what" style="letter-spacing: 4px;">WHAT</a></li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-
-    <div class="relative-text2">
-      <h6 class="w3-hide-small w3-display-middle w3-text-grey w3-center" style="font-size:0.75vw"><i>This site is under construction.</i></h6>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title  .modal-dialog-centered" style="color: #5a5a5a; font-size:medium;"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp&nbsp Construction Ahead!</h5>
+      </div>
+      <div class="modal-body" style="color: #5a5a5a;">
+        <p>This site is under construction. Kindly avoid getting emotionally (or otherwise) invested in any components as they are subject to change at any given commit.</p>
+        <p style="text-align: right;">Love, Dima &nbsp<i class="fa fa-heart" aria-hidden="true"></i>&nbsp</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Dismiss</button>
+      </div>
     </div>
+  </div>
+</div>
 
-    <div class="relative-text">
-      <div class="w3-display-middle w3-text-light-grey w3-center"> <!--class="w3-border"-->
-        <h1 class="w3-xxxlarge w3-hide-small">DIMA <b>ISMAIL</b></h1>
-        <h5 class="w3-hide-large w3-xxlarge" >DIMA ISMAIL</h5>
-        <div class="w3-container w3-hide-small">
-          <h3 class="big w3-animate-right"><b>Software Developer</b></h3>
-          <h3 class="big w3-animate-right"><b>Engineering Graduate</b></h3>
-          <h3 class="big w3-animate-right"><b>ENFP-A: "Campaigner"</b></h3>
-          <h3 class="big w3-animate-right"><b>Hackathon Enthusiast</b></h3>
-        </div>
-        <div class="w3-container w3-hide-large">
-          <h4 class="sm w3-animate-right"><b>Software Developer</b></h4>
-          <h4 class="sm w3-animate-right"><b>Engineering Graduate</b></h4>
-          <h4 class="sm w3-animate-right"><b>ENFP-A: "Campaigner"</b></h4>
-          <h4 class="sm w3-animate-right"><b>Hackathon Enthusiast</b></h4>
-        </div>
-        
-        <script>
-        var myIndex = 0;
-        carousel();
-        
-        function carousel() {
-          var i;
-          var x = document.getElementsByClassName("big w3-animate-right");
-          var y = document.getElementsByClassName("sm w3-animate-right");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-            y[i].style.display = "none";
-          }
-          myIndex++;
-          if (myIndex > x.length) {myIndex = 1}    
-          x[myIndex-1].style.display = "block";  
-          y[myIndex-1].style.display = "block";
-          setTimeout(carousel, 2000); // Change image every 2 seconds
+<!-- First Container -->
+<div class="flex-container flex-start container-fluid container bg-1 text-center" style="padding-top:10%;">
+  <div class="flex-item row" style="display:flex; align-items: center;">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <h1 >DIMA <b>ISMAIL</b></h1>
+      <div>
+        <h3 class="big w3-animate-right"><b>Software Developer</b></h3>
+        <h3 class="big w3-animate-right"><b>Engineering Graduate</b></h3>
+        <h3 class="big w3-animate-right"><b>ENFP-A: "Campaigner"</b></h3>
+        <h3 class="big w3-animate-right"><b>Hackathon Enthusiast</b></h3>
+      </div>
+      
+      <div style="display: flex; justify-content: space-evenly;">
+        <a href="https://twitter.com/dismail_"><img src="img/logo/twitter.png " id="icon"  alt="twitter_icon"></a>
+        <a href="https://devpost.com/dismail"><img src="img/logo/devpost.png" id="icon"  alt="devpost_icon"></a>
+        <a href="https://www.linkedin.com/in/dimaismail"><img src="img/logo/linkedin.png" id="icon" alt="linkedin_icon"></a>
+        <a href="https://www.github.com/dima028"><img src="img/logo/github.png" id="icon"  alt="github_icon"></a>
+      </div>
+
+      <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("big w3-animate-right");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
         }
-        </script>  
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2500); // Change image every 2.5 seconds
+      }
+      </script>  
+    </div>
+    <div class="flex-container flex-start col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <img src="img/me-arm.png" class="flex-item img-responsive" style="display:flex; align-items: flex-end;" width="350" height="350">
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid container bg-2 text-center" id="who" style="padding-bottom: 10vh;">
+  <h3 class="margin" style="letter-spacing: 4px;">Who I Am</h3>
+  <p>Hi! I'm <b>Dima</b> - a Systems Engineering graduate from the Univeristy of Guelph!</p>
+  <p style="margin-top: 15px;">I enjoy tinkering with various software and hardware toys and tools, and take special interest in <b>signal processing</b>, <b>machine learning</b>, and <b>fintech</b>. In my painfully limited free time, you can find me attending hackathons, engineering competitions, or tending to personal projects.</p>
+</div>
+
+<!-- Third Container -->
+<div class="container-fluid bg-3 container text-center" id="where" style="padding-left: 20vw; padding-right: 20vw; padding-bottom: 10vh;">
+  <h3 style="letter-spacing: 4px;">Where I've Been</h3>
+  <h4>Co-op Placements & Internships</h4>
+  <br>
+  <div class="row text-center">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="padding-bottom: 20px;">
+      <div class="flex-container thumbnail">
+        <img src="img/logo/caseware.png" alt="CaseWare International Inc logo" style="display:flex; align-items: flex-start;">
+        <div style="flex-direction: column; height:80%; display:flex; align-items: flex-end;">
+          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0; font-size: 13px; margin-top: 15px"><strong>Software Developer</strong></p>
+          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 w3-opacity" style="padding:0; font-size: 9px"><i class="fa fa-map-marker"></i>&nbsp&nbsp Toronto, Ontario</p>
+          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 w3-opacity" style="padding:0; font-size: 9px"><i class="fa fa-calendar"></i>&nbsp&nbsp Jan - Aug 2021</p>
+        </div>
       </div>
     </div>
-  </header>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="padding-bottom: 20px;">
+      <div class="flex-container thumbnail">
+        <img src="img/logo/guelph.png" alt="University of Guelph logo" style="display:flex; align-items: flex-start;">
+        <div style="display:flex; flex-direction: column; align-items: flex-end; height:80%">
+          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0; font-size: 13px; margin-top: 15px"><strong>Undergraduate Research Assistant</strong></p>
+          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 w3-opacity" style="padding:0; font-size: 9px"><i class="fa fa-map-marker"></i>&nbsp&nbsp Guelph, Ontario</p>
+          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 w3-opacity" style="padding:0; font-size: 9px"><i class="fa fa-calendar"></i>&nbsp&nbsp May - Aug 2020</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="padding-bottom: 20px;">
+      <div class="flex-container thumbnail">
+        <img src="img/logo/sri.png" alt="Sunnybrook Health Sciences Center logo" style="display:flex; align-items: flex-start;">
+        <div style="display:flex; flex-direction: column; align-items: flex-end; height:80%">
+          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0; font-size: 13px; margin-top: 15px"><strong>Co-op Student Developer</strong></p>
+          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 w3-opacity" style="padding:0; font-size: 9px"><i class="fa fa-map-marker"></i>&nbsp&nbsp Toronto, Ontario</p>
+          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 w3-opacity" style="padding:0; font-size: 9px"><i class="fa fa-calendar"></i>&nbsp&nbsp May - Dec 2019</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="padding-bottom: 20px;">
+      <div class="flex-container thumbnail">
+        <img src="img/logo/guelph.png" alt="University of Guelph logo" style="display:flex; align-items: flex-start;">
+        <div style="display:flex; flex-direction: column; align-items: flex-end; height:80%">
+          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0; font-size: 13px; margin-top: 15px"><strong>Work-Study Student</strong></p>
+          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 w3-opacity" style="padding:0; font-size: 9px"><i class="fa fa-map-marker"></i>&nbsp&nbsp Guelph, Ontario</p>
+          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 w3-opacity" style="padding:0; font-size: 9px"><i class="fa fa-calendar"></i>&nbsp&nbsp May '18 - Apr '19</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <body>
-    <div class="bg"></div>
-    <div class="w3-row w3-bottom w3-center w3-hide-small">
-      <div class="w3-col w3-tiny" style="width:41%; padding-bottom:25px">test</div>
-      <div class="w3-col" style="width:6%">
-        <a href="https://devpost.com/dismail"><img src="img/logo/devpost.png" id="icon" alt="devpost_icon" class="w3-image w3-hover-opacity"></a>
-      </div>
-      <div class="w3-col" style="width:6%">
-        <a href="https://www.linkedin.com/in/dimaismail"><img src="img/logo/linkedin.png" id="icon2" alt="linkedin_icon" class="w3-image w3-hover-opacity"></a>
-      </div>
-      <div class="w3-col" style="width:6%">
-        <a href="https://www.github.com/dima028"><img src="img/logo/github.png" id="icon3" alt="github_icon" class="w3-image w3-hover-opacity"></a>
-      </div>
-      <div class="w3-col" style="width:41%"></div>
-    </div>  
-    
 
-    <div class="w3-row w3-bottom w3-center w3-hide-large">
-      <div class="w3-col w3-tiny" style="width:29%; padding-bottom:25px">t</div>
-      <div class="w3-col" style="width:14%">
-        <a href="https://devpost.com/dismail"><img src="img/logo/devpost.png" id="icon" alt="devpost_icon" class="w3-image w3-hover-opacity"></a>
-      </div>
-      <div class="w3-col" style="width:14%">
-        <a href="https://www.linkedin.com/in/dimaismail"><img src="img/logo/linkedin.png" id="icon2" alt="linkedin_icon" class="w3-image w3-hover-opacity"></a>
-      </div>
-      <div class="w3-col" style="width:14%">
-        <a href="https://www.github.com/dima028"><img src="img/logo/github.png" id="icon3" alt="github_icon" class="w3-image w3-hover-opacity"></a>
-      </div>
-      <div class="w3-col" style="width:29%"></div>
-    </div> 
-    <!-- <div class="w3-row w3-bottom">
-      <div class="w3-col w3-green w3-container" style="width:15%"><p>15%</p></div>
-      <div class="w3-col w3-dark-grey w3-container" style="width:35%"><p>35%</p></div>
-      <div class="w3-col w3-red w3-container" style="width:10%"><p>10%</p></div>
-      <div class="w3-col w3-blue w3-container" style="width:30%"><p>30%</p></div>
-      <div class="w3-col w3-purple w3-container" style="width:10%"><p>10%</p></div>
-    </div> -->
-      <!-- End page content -->
-    <!-- <footer class="w3-container w3-bottom w3-center" id="links"> 
-      <a href="https://devpost.com/dismail"><img src="img/logo/devpost.png" id="icon" alt="devpost_icon" class="w3-image w3-hover-opacity"></a>
-      <img class="w3-image w3-hover-opacity" width="10">
-      <a href="https://www.linkedin.com/in/dimaismail"><img src="img/logo/linkedin.png" id="icon" alt="linkedin_icon" class="w3-image w3-hover-opacity"></a>
-      <img class="w3-image w3-hover-opacity" width="10">
-      <a href="https://www.github.com/dima028"><img src="img/logo/github.png" id="icon" alt="github_icon" class="w3-image w3-hover-opacity"></a>
-    </footer> -->
+<div class="container-fluid container bg-4 text-center" id="what" style="padding-bottom: 10vh">    
+  <h3 style="letter-spacing: 4px;">What I've Made</h3><br>
+  <img src="img/icon/underconstruction.gif" alt="Under Construction" width="170" class="image">
+  <h6 class="text-center"><i>This section is under construction.</i></h6>
+</div>
 
-  </body>
+<!-- Footer -->
+<footer id="footer" class="container-fluid bg-5 text-center text-muted" style="padding-bottom: 1vh;">
+  <p style="font-size:x-small; letter-spacing: 4px;"><strong>DIMA ISMAIL</strong></p>
+  <p style="color:#9c9c9c; font-size: x-small;">Made with <i class="fa fa-heart" aria-hidden="true"></i> & Bootstrap </p>
+</footer>
+
+</body>
 </html>
