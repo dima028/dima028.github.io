@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
   <title>Dima Ismail</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Engineering Graduate at the University of Guelph, Software Developer at Rogers Communications">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -51,6 +51,19 @@
       background-color: #003049;
       color: #edf2fb;
     }
+    body{
+      background-color: rgba(0, 0, 0, 0);
+    }
+    .carousel{
+      margin-top: 50px;
+    }
+    .carousel-inner{
+      height: 100px;
+    }
+    .carousel-caption{
+      color: #fff;
+      top: 50%;
+    }
     .container-fluid {
       padding-top: 2vh;
       padding-bottom: 0;
@@ -64,8 +77,8 @@
       width: 100%;
     }
     .modal {
-    position: absolute;
-    top: 20%;
+      position: absolute;
+      top: 20%;
     }
     .navbar {
       border: 0;
@@ -76,9 +89,23 @@
       z-index: 9999;
       margin: 0 auto;
       font-size: small;
+      position: relative;
     }
     .navbar-nav li a:hover, .navbar-nav li.active a {
       background-color: #ffffff00 !important;
+    }
+    .navbar-nav {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .navbar-left, .navbar-right {
+      display: flex;
+      align-items: center;
+    }
+    .navbar-right {
+      margin-left: auto;
     }
     .open .dropdown-toggle {
       color: #fff;
@@ -156,18 +183,20 @@
 
 <body>
   <!-- Navbar (sit on top) -->
-  <nav class="navbar navbar-fixed-top scrolling-navbar">
-    <div class="container" style="padding-top: 0; padding-bottom: 0;">
-      <div>
-        <ul class="nav navbar-nav nav-bar-left">
-          <li><a href="#" ><img src="android-chrome-192x192.png" id="icon"></a></li>
+  <nav class="navbar navbar-fixed">
+    <div class="container" style="padding-top: 0; padding-bottom: 0; margin-top: 15px;">
+      <div class="navbar-left">
+        <ul class="navbar-nav">
+          <a href="#" >
+            <img src="android-chrome-192x192.png" id="icon">
+          </a>
         </ul>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#who" style="letter-spacing: 4px;">WHO</a></li>
-          <li><a href="#where" style="letter-spacing: 4px;">WHERE</a></li>
-          <li><a href="#what" style="letter-spacing: 4px;">WHAT</a></li>
+      <div class="navbar-right">
+        <ul class="navbar-nav">
+          <li><a href="#who" style="font-size:xx-small;letter-spacing: 4px;">WHO</a></li>
+          <li><a href="#where" style="font-size: xx-small;letter-spacing: 4px;">WHERE</a>
+          <li><a href="#what" style="font-size: xx-small;letter-spacing: 4px;">WHAT</a></li>
         </ul>
       </div>
     </div>
@@ -194,12 +223,43 @@
 <div class="flex-container flex-start container-fluid container bg-1 text-center" style="padding-top:10%;">
   <div class="flex-item row" style="display:flex; align-items: center;">
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <h1 >DIMA <b>ISMAIL</b></h1>
-      <div>
+      <h1>DIMA <b>ISMAIL</b></h1>
+      <!-- <div>
         <h3 class="big w3-animate-right"><b>Software Developer</b></h3>
         <h3 class="big w3-animate-right"><b>Engineering Graduate</b></h3>
         <h3 class="big w3-animate-right"><b>ENFP-A: "Campaigner"</b></h3>
         <h3 class="big w3-animate-right"><b>Hackathon Enthusiast</b></h3>
+      </div> -->
+
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-caption">
+              <h3>Software Developer</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <h3>Engineering Graduate</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <h3>ENFP-A: "Campaigner"</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <h3>Hackathon Enthusiast</h3>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
       </div>
       
       <div style="display: flex; justify-content: space-evenly;">
@@ -209,7 +269,7 @@
         <a href="https://www.github.com/dima028"><img src="img/logo/github.png" id="icon"  alt="github_icon"></a>
       </div>
 
-      <script>
+      <!-- <script>
       var myIndex = 0;
       carousel();
       
@@ -224,7 +284,7 @@
         x[myIndex-1].style.display = "block";  
         setTimeout(carousel, 2500); // Change image every 2.5 seconds
       }
-      </script>  
+      </script>   -->
     </div>
     <div class="flex-container flex-start col-lg-6 col-md-6 col-sm-6 col-xs-12">
       <img src="img/me-arm.png" class="flex-item img-responsive" style="display:flex; align-items: flex-end;" width="350" height="350">
