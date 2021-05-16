@@ -19,166 +19,162 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff00">
   <style>
-    body {
-    font: 20px Montserrat, sans-serif;
-    line-height: 1.8;
-    color: #f5f6f7;
-    }
-    p {
-    font-size: 16px;
-    margin-bottom:0;
-    padding: 0;
-    margin-top: 0;
-    }
-    .margin {margin-bottom: 45px;}
-    .bg-1 { 
-      background-color: #ecf0fc;
-      color: #5a5a5a;
-    }
-    .bg-2 { 
-      background-color: #e2eafc;
-      color: #5a5a5a;
-    }
-    .bg-3 { 
-      background-color: #ccdbfd;
-      color: #5a5a5a;
-    }
-    .bg-4 { 
-      background-color: #b6ccfe;
-      color: #5a5a5a;
-    }
-    .bg-5 { 
-      background-color: #003049;
-      color: #edf2fb;
-    }
-    body{
-      background-color: rgba(0, 0, 0, 0);
-    }
-    .carousel{
-      margin-top: 50px;
-    }
-    .carousel-inner{
-      height: 100px;
-    }
-    .carousel-caption{
-      color: #fff;
-      top: 50%;
-    }
-    .container-fluid {
-      padding-top: 2vh;
-      padding-bottom: 0;
-    }
-    .container {
-      padding-left: 25vw;
-      padding-top: 7vh;
-      padding-right: 25vw;
-      margin-left: 0;
-      margin-right: 0;
-      width: 100%;
-    }
-    .modal {
-      position: absolute;
-      top: 20%;
-    }
-    .navbar {
-      border: 0;
-      background-color: #ecf0fc;
-      display: flex;
-      justify-content: space-between;
-      opacity: 0.9;
-      z-index: 9999;
-      margin: 0 auto;
-      font-size: small;
-      position: relative;
-    }
-    .navbar-nav li a:hover, .navbar-nav li.active a {
-      background-color: #ffffff00 !important;
-    }
-    .navbar-nav {
-      display: flex;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-    .navbar-left, .navbar-right {
-      display: flex;
-      align-items: center;
-    }
-    .navbar-right {
-      margin-left: auto;
-    }
-    .open .dropdown-toggle {
-      color: #fff;
-      background-color: #555 !important;
-    }
-    .logo-image img{
-      max-width: 7vw;
-      max-height: 7vh;
-      margin-top: -6px;
-    }
-    #icon{
-      max-width: 4vw;
-      min-width: 10px;
-      max-height: 4vh;
-      min-height: 10px;
-      transition: 0.3s;
-      transition-delay: 0.00001s;
-    }
-    #icon:hover {
-      opacity: 0.6;
-    }
-    #me{
-      max-width: 100vw;
-      min-width: 30px;
-      max-height: 100vh;
-      min-height: 60px;
-    }
-    #footer {
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
-      margin-bottom: 0px;
-    }
-    .row {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      margin-right: -15px;
-      margin-left: -15px;
-    }
-    .row.display-flex {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .row.display-flex > [class*='col-'] {
-      display: flex;
-      flex-direction: column;
-    }
-    *, ::after, ::before {
-      box-sizing: border-box;
-    }
-    root {
-      --breakpoint-xs: 0;
-      --breakpoint-sm: 576px;
-      --breakpoint-md: 768px;
-      --breakpoint-lg: 992px;
-      --breakpoint-xl: 1200px;
-    }
-    .thumbnail {
-      padding: 15px;
-      background-color: #e2eafc;
-      border: none;
-      border-radius: 0;
-      margin-bottom: 0;
-      height: 100%;
-    }
+body {
+  font: 20px Montserrat, sans-serif;
+  line-height: 1.8;
+  color: #f5f6f7;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.bg-1 { 
+  background-color: #ecf0fc;
+  color: #5a5a5a;
+}
+.bg-2 { 
+  background-color: #e2eafc;
+  color: #5a5a5a;
+}
+.bg-3 { 
+  background-color: #ccdbfd;
+  color: #5a5a5a;
+}
+.bg-4 { 
+  background-color: #b6ccfe;
+  color: #5a5a5a;
+}
+.bg-5 { 
+  background-color: #003049;
+  color: #edf2fb;
+}
+.carousel{
+  margin-top: 50px;
+}
+.carousel-inner{
+  height: 100px;
+}
+.carousel-caption{
+  color: #fff;
+  top: 50%;
+}
+.container-fluid {
+  padding-top: 2vh;
+  padding-bottom: 0;
+}
+.container {
+  padding-left: 25vw;
+  padding-top: 7vh;
+  padding-right: 25vw;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+#footer {
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+#icon{
+  max-width: 4vw;
+  min-width: 10px;
+  max-height: 4vh;
+  min-height: 10px;
+  transition: 0.3s;
+  transition-delay: 0.00001s;
+}
+#icon:hover {
+  opacity: 0.6;
+}
+
+#me{
+  max-width: 100vw;
+  min-width: 30px;
+  max-height: 100vh;
+  min-height: 60px;
+}
+.logo-image img{
+  max-width: 7vw;
+  max-height: 7vh;
+  margin-top: -6px;
+}
+.margin {margin-bottom: 45px;}
+.modal {
+  position: absolute;
+  top: 20%;  
+}
+.navbar {
+  border: 0;
+  background-color: #ecf0fc;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.9;
+  z-index: 9999;
+  margin: 0 auto;
+  font-size: small;
+  position: relative;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  background-color: #ffffff00 !important;
+}
+.navbar-nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navbar-left, .navbar-right {
+  display: flex;
+  align-items: center;
+}
+.navbar-right {
+  margin-left: auto;
+}
+.open .dropdown-toggle {
+  color: #fff;
+  background-color: #555 !important;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom:0;
+  padding: 0;
+  margin-top: 0;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.display-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+root {
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+.thumbnail {
+  padding: 15px;
+  background-color: #e2eafc;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+  height: 100%;
+}
   </style>
-  <script>
-    $(document).ready(function(){
-        $("#myModal").modal('show');
-    });
-  </script>
 </head>
 
 <body>
@@ -224,12 +220,6 @@
   <div class="flex-item row" style="display:flex; align-items: center;">
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
       <h1>DIMA <b>ISMAIL</b></h1>
-      <!-- <div>
-        <h3 class="big w3-animate-right"><b>Software Developer</b></h3>
-        <h3 class="big w3-animate-right"><b>Engineering Graduate</b></h3>
-        <h3 class="big w3-animate-right"><b>ENFP-A: "Campaigner"</b></h3>
-        <h3 class="big w3-animate-right"><b>Hackathon Enthusiast</b></h3>
-      </div> -->
 
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -254,12 +244,6 @@
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </a>
       </div>
       
       <div style="display: flex; justify-content: space-evenly;">
@@ -269,22 +253,6 @@
         <a href="https://www.github.com/dima028"><img src="img/logo/github.png" id="icon"  alt="github_icon"></a>
       </div>
 
-      <!-- <script>
-      var myIndex = 0;
-      carousel();
-      
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("big w3-animate-right");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";  
-        }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}    
-        x[myIndex-1].style.display = "block";  
-        setTimeout(carousel, 2500); // Change image every 2.5 seconds
-      }
-      </script>   -->
     </div>
     <div class="flex-container flex-start col-lg-6 col-md-6 col-sm-6 col-xs-12">
       <img src="img/me-arm.png" class="flex-item img-responsive" style="display:flex; align-items: flex-end;" width="350" height="350">
@@ -294,14 +262,14 @@
 </div>
 
 <!-- Second Container -->
-<div class="container-fluid container bg-2 text-center" id="who" style="padding-bottom: 10vh;">
+<div class="container-fluid container bg-1 text-center" id="who" style="padding-bottom: 10vh;">
   <h3 class="margin" style="letter-spacing: 4px;">Who I Am</h3>
   <p>Hi! I'm <b>Dima</b> - a Systems Engineering graduate from the Univeristy of Guelph!</p>
   <p style="margin-top: 15px;">I enjoy tinkering with various software and hardware toys and tools, and take special interest in <b>signal processing</b>, <b>machine learning</b>, and <b>fintech</b>. In my painfully limited free time, you can find me attending hackathons, engineering competitions, or tending to personal projects.</p>
 </div>
 
 <!-- Third Container -->
-<div class="container-fluid bg-3 container text-center" id="where" style="padding-left: 20vw; padding-right: 20vw; padding-bottom: 10vh;">
+<div class="container-fluid bg-1 container text-center" id="where" style="padding-left: 20vw; padding-right: 20vw; padding-bottom: 10vh;">
   <h3 style="letter-spacing: 4px;">Where I've Been</h3>
   <h4>Co-op Placements & Internships</h4>
   <br>
@@ -349,14 +317,14 @@
   </div>
 </div>
 
-<div class="container-fluid container bg-4 text-center" id="what" style="padding-bottom: 10vh">    
+<div class="container-fluid container bg-1 text-center" id="what" style="padding-bottom: 10vh">    
   <h3 style="letter-spacing: 4px;">What I've Made</h3><br>
   <img src="img/icon/underconstruction.gif" alt="Under Construction" width="170" class="image">
   <h6 class="text-center"><i>This section is under construction.</i></h6>
 </div>
 
 <!-- Footer -->
-<footer id="footer" class="container-fluid bg-5 text-center text-muted" style="padding-bottom: 1vh;">
+<footer id="footer" class="container-fluid bg-3 text-center text-muted" style="padding-bottom: 1vh;">
   <p style="font-size:x-small; letter-spacing: 4px;"><strong>DIMA ISMAIL</strong></p>
   <p style="color:#9c9c9c; font-size: x-small;">Made with <i class="fa fa-heart" aria-hidden="true"></i> & Bootstrap </p>
 </footer>
