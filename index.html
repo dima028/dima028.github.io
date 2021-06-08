@@ -3,341 +3,170 @@
 <head>
   <title>Dima Ismail</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Engineering Graduate at the University of Guelph, Software Developer at Rogers Communications">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff00">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-    body {
+  body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
     color: #f5f6f7;
-    }
-    p {
-    font-size: 16px;
-    margin-bottom:0;
-    padding: 0;
-    margin-top: 0;
-    }
-    .margin {margin-bottom: 45px;}
-    .bg-1 { 
-      background-color: #ecf0fc;
-      color: #5a5a5a;
-    }
-    .bg-2 { 
-      background-color: #e2eafc;
-      color: #5a5a5a;
-    }
-    .bg-3 { 
-      background-color: #ccdbfd;
-      color: #5a5a5a;
-    }
-    .bg-4 { 
-      background-color: #b6ccfe;
-      color: #5a5a5a;
-    }
-    .bg-5 { 
-      background-color: #003049;
-      color: #edf2fb;
-    }
-    body{
-      background-color: rgba(0, 0, 0, 0);
-    }
-    .carousel{
-      margin-top: 50px;
-    }
-    .carousel-inner{
-      height: 100px;
-    }
-    .carousel-caption{
-      color: #fff;
-      top: 50%;
-    }
-    .container-fluid {
-      padding-top: 2vh;
-      padding-bottom: 0;
-    }
-    .container {
-      padding-left: 25vw;
-      padding-top: 7vh;
-      padding-right: 25vw;
-      margin-left: 0;
-      margin-right: 0;
-      width: 100%;
-    }
-    .modal {
-      position: absolute;
-      top: 20%;
-    }
-    .navbar {
-      border: 0;
-      background-color: #ecf0fc;
-      display: flex;
-      justify-content: space-between;
-      opacity: 0.9;
-      z-index: 9999;
-      margin: 0 auto;
-      font-size: small;
-      position: relative;
-    }
-    .navbar-nav li a:hover, .navbar-nav li.active a {
-      background-color: #ffffff00 !important;
-    }
-    .navbar-nav {
-      display: flex;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-    .navbar-left, .navbar-right {
-      display: flex;
-      align-items: center;
-    }
-    .navbar-right {
-      margin-left: auto;
-    }
-    .open .dropdown-toggle {
-      color: #fff;
-      background-color: #555 !important;
-    }
-    .logo-image img{
-      max-width: 7vw;
-      max-height: 7vh;
-      margin-top: -6px;
-    }
-    #icon{
-      max-width: 4vw;
-      min-width: 10px;
-      max-height: 4vh;
-      min-height: 10px;
-      transition: 0.3s;
-      transition-delay: 0.00001s;
-    }
-    #icon:hover {
-      opacity: 0.6;
-    }
-    #me{
-      max-width: 100vw;
-      min-width: 30px;
-      max-height: 100vh;
-      min-height: 60px;
-    }
-    #footer {
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
-      margin-bottom: 0px;
-    }
-    .row {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      margin-right: -15px;
-      margin-left: -15px;
-    }
-    .row.display-flex {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .row.display-flex > [class*='col-'] {
-      display: flex;
-      flex-direction: column;
-    }
-    *, ::after, ::before {
-      box-sizing: border-box;
-    }
-    root {
-      --breakpoint-xs: 0;
-      --breakpoint-sm: 576px;
-      --breakpoint-md: 768px;
-      --breakpoint-lg: 992px;
-      --breakpoint-xl: 1200px;
-    }
-    .thumbnail {
-      padding: 15px;
-      background-color: #e2eafc;
-      border: none;
-      border-radius: 0;
-      margin-bottom: 0;
-      height: 100%;
-    }
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #19181b; /* Green */
+    color: #dddddd;
+  }
+  .bg-2 { 
+    background-color: #1e1d20; /* Dark Blue */
+    color: #c2c2c2;
+    width: 100%;
+  }
+  .bg-3 { 
+    background-color: #1e1d20; /* White */
+    color: #c2c2c2;
+    width: 100%;
+  }
+  .bg-4 { 
+    background-color: #1e1d20; /* Black Gray */
+    color: #c2c2c2;
+    width: 100%;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  hr {
+    display: block;
+    height: 1px;
+    width: 50%;
+    align-items: center;
+    border: 0;
+    border-top: 1px solid rgb(94, 93, 93);
+    padding: 0vw;
+}
+  #icon{
+  max-width: 4vw;
+  min-width: 10px;
+  max-height: 4vh;
+  min-height: 10px;
+  transition: 0.3s;
+  transition-delay: 0.00001s;
+  }
+  #icon:hover {
+    opacity: 0.6;
+  }
+  .navbar {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: #151316;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    opacity: 90%;
+    padding-left: 10vw; 
+    padding-right: 10vw;
+  }
+  .navbar-nav  li a:hover {
+    color: #00acee !important;
+  }
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .row.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .row.display-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }
+  .thumbnail {
+    padding: 15px;
+    background-color: #e9e9e9;
+    color:#2f2f2f93;
+    border: none;
+    border-radius: 5%;
+    margin-bottom: 0;
+    height: 100%;
+    padding-top: 5vh;
+  }
   </style>
-  <script>
-    $(document).ready(function(){
-        $("#myModal").modal('show');
-    });
-  </script>
 </head>
-
 <body>
-  <!-- Navbar (sit on top) -->
-  <nav class="navbar navbar-fixed">
-    <div class="container" style="padding-top: 0; padding-bottom: 0; margin-top: 15px;">
-      <div class="navbar-left">
-        <ul class="navbar-nav">
-          <a href="#" >
-            <img src="android-chrome-192x192.png" id="icon">
-          </a>
-        </ul>
-      </div>
-      <div class="navbar-right">
-        <ul class="navbar-nav">
-          <li><a href="#who" style="font-size:xx-small;letter-spacing: 4px;">WHO</a></li>
-          <li><a href="#where" style="font-size: xx-small;letter-spacing: 4px;">WHERE</a>
-          <li><a href="#what" style="font-size: xx-small;letter-spacing: 4px;">WHAT</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title  .modal-dialog-centered" style="color: #5a5a5a; font-size:medium;"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp&nbsp Construction Ahead!</h5>
-      </div>
-      <div class="modal-body" style="color: #5a5a5a;">
-        <p>This site is under construction. Some components may be incomplete, unoptimized for smartphone or small-screen use, or otherwise subject to change. Thank you for your patience.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Dismiss</button>
-      </div>
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img style="max-width: 5.5vw; max-height: 5.5vh; margin-top: -1vh;" src="android-chrome-192x192.png" id="icon">
+      </a>
     </div>
-  </div>
-</div>
+
+    <ul class="nav navbar-nav navbar-right" style="text-align: right;">
+      <li><a href="#who">WHO</a></li>
+      <li><a href="#where">WHERE</a></li>
+      <li><a href="#what">WHAT</a></li>
+    </ul>
+</nav>
 
 <!-- First Container -->
-<div class="flex-container flex-start container-fluid container bg-1 text-center" style="padding-top:10%;">
-  <div class="flex-item row" style="display:flex; align-items: center;">
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <h1>DIMA <b>ISMAIL</b></h1>
-      <!-- <div>
-        <h3 class="big w3-animate-right"><b>Software Developer</b></h3>
-        <h3 class="big w3-animate-right"><b>Engineering Graduate</b></h3>
-        <h3 class="big w3-animate-right"><b>ENFP-A: "Campaigner"</b></h3>
-        <h3 class="big w3-animate-right"><b>Hackathon Enthusiast</b></h3>
-      </div> -->
-
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="carousel-caption">
-              <h3>Software Developer</h3>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-caption">
-              <h3>Engineering Graduate</h3>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-caption">
-              <h3>ENFP-A: "Campaigner"</h3>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-caption">
-              <h3>Hackathon Enthusiast</h3>
-            </div>
-          </div>
+<div class="container-fluid bg-1" style="padding-bottom:0">
+  <div class="flex-container flex-start container-fluid container bg-1 text-center" style="padding-bottom:0;padding-left:5vw;">
+    <div class="flex-item row" style="display:flex; align-items: center; padding-bottom:0;">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <h1 style="letter-spacing: 1vw;">DIMA <b>ISMAIL</b></h1>
+        <h3 style="letter-spacing: 0.6vw; color: #9c9c9c;">Software Developer</h3>
+        
+        <div style="display: flex; justify-content: space-evenly;">
+          <a href="https://twitter.com/dismail_"><img src="img/logo/twitter.png " id="icon" style="max-width: 2vw;" alt="twitter_icon"></a>
+          <a href="https://devpost.com/dismail"><img src="img/logo/devpost.png" id="icon" style="max-width: 2vw;" alt="devpost_icon"></a>
+          <a href="https://www.linkedin.com/in/dimaismail"><img src="img/logo/linkedin.png" id="icon" style="max-width: 2vw;" alt="linkedin_icon"></a>
+          <a href="https://www.github.com/dima028"><img src="img/logo/github.png" id="icon" style="max-width: 2vw;" alt="github_icon"></a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </a>
+  
       </div>
-      
-      <div style="display: flex; justify-content: space-evenly;">
-        <a href="https://twitter.com/dismail_"><img src="img/logo/twitter.png " id="icon"  alt="twitter_icon"></a>
-        <a href="https://devpost.com/dismail"><img src="img/logo/devpost.png" id="icon"  alt="devpost_icon"></a>
-        <a href="https://www.linkedin.com/in/dimaismail"><img src="img/logo/linkedin.png" id="icon" alt="linkedin_icon"></a>
-        <a href="https://www.github.com/dima028"><img src="img/logo/github.png" id="icon"  alt="github_icon"></a>
+      <div class="flex-container flex-start col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <img src="img/me-arm.png" class="flex-item img-responsive" style="display:flex; align-items: flex-end;" width="350" height="350">
       </div>
-
-      <!-- <script>
-      var myIndex = 0;
-      carousel();
-      
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("big w3-animate-right");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";  
-        }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}    
-        x[myIndex-1].style.display = "block";  
-        setTimeout(carousel, 2500); // Change image every 2.5 seconds
-      }
-      </script>   -->
-    </div>
-    <div class="flex-container flex-start col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <img src="img/me-arm.png" class="flex-item img-responsive" style="display:flex; align-items: flex-end;" width="350" height="350">
     </div>
   </div>
-</div>
 </div>
 
 <!-- Second Container -->
-<div class="container-fluid container bg-2 text-center" id="who" style="padding-bottom: 10vh;">
-  <h3 class="margin" style="letter-spacing: 4px;">Who I Am</h3>
-  <p>Hi! I'm <b>Dima</b> - a Systems Engineering graduate from the Univeristy of Guelph!</p>
-  <p style="margin-top: 15px;">I enjoy tinkering with various software and hardware toys and tools, and take special interest in <b>signal processing</b>, <b>machine learning</b>, and <b>fintech</b>. In my painfully limited free time, you can find me attending hackathons, engineering competitions, or tending to personal projects.</p>
+<div class="container-fluid container bg-2 text-center" id="who" style="padding-bottom: 0vh;">
+  <h3 class="margin" style="letter-spacing: 1vw;">WHO I AM</h3>
+  <p>Hi! I'm <b>Dima</b> - a Systems Engineering graduate from the University of Guelph!</p>
+  <p style="text-align: justify ;margin-top: 15px; margin-left: 15vw; margin-right: 10vw;">I enjoy tinkering with various software and hardware toys and tools, and take special interest in <b>software development</b>, particularily in applications of <b>machine learning</b> and <b>fintech</b>. In my painfully limited free time, you can find me attending hackathons, engineering competitions, or tending to personal projects.</p>
 </div>
 
 <!-- Third Container -->
 <div class="container-fluid bg-3 container text-center" id="where" style="padding-left: 20vw; padding-right: 20vw; padding-bottom: 10vh;">
-  <h3 style="letter-spacing: 4px;">Where I've Been</h3>
+  <hr><br>
+  <h3 style="letter-spacing: 1vw;">WHERE I'VE BEEN</h3>
   <h4>Co-op Placements & Internships</h4>
   <br>
-  <div class="row text-center">
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="padding-bottom: 20px;">
-      <div class="flex-container thumbnail">
-        <img src="img/logo/caseware.png" alt="CaseWare International Inc logo" style="display:flex; align-items: flex-start;">
-        <div style="flex-direction: column; height:80%; display:flex; align-items: flex-end;">
-          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0; font-size: 13px; margin-top: 15px"><strong>Software Developer</strong></p>
-          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 w3-opacity" style="padding:0; font-size: 9px"><i class="fa fa-map-marker"></i>&nbsp&nbsp Toronto, Ontario</p>
-          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 w3-opacity" style="padding:0; font-size: 9px"><i class="fa fa-calendar"></i>&nbsp&nbsp Jan - Aug 2021</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="padding-bottom: 20px;">
-      <div class="flex-container thumbnail">
-        <img src="img/logo/guelph.png" alt="University of Guelph logo" style="display:flex; align-items: flex-start;">
-        <div style="display:flex; flex-direction: column; align-items: flex-end; height:80%">
-          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0; font-size: 13px; margin-top: 15px"><strong>Undergraduate Research Assistant</strong></p>
-          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 w3-opacity" style="padding:0; font-size: 9px"><i class="fa fa-map-marker"></i>&nbsp&nbsp Guelph, Ontario</p>
-          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 w3-opacity" style="padding:0; font-size: 9px"><i class="fa fa-calendar"></i>&nbsp&nbsp May - Aug 2020</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="padding-bottom: 20px;">
-      <div class="flex-container thumbnail">
-        <img src="img/logo/sri.png" alt="Sunnybrook Health Sciences Center logo" style="display:flex; align-items: flex-start;">
-        <div style="display:flex; flex-direction: column; align-items: flex-end; height:80%">
-          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0; font-size: 13px; margin-top: 15px"><strong>Co-op Student Developer</strong></p>
-          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 w3-opacity" style="padding:0; font-size: 9px"><i class="fa fa-map-marker"></i>&nbsp&nbsp Toronto, Ontario</p>
-          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 w3-opacity" style="padding:0; font-size: 9px"><i class="fa fa-calendar"></i>&nbsp&nbsp May - Dec 2019</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="padding-bottom: 20px;">
-      <div class="flex-container thumbnail">
+  <div class="row text-center" style="height: 100%;">  
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="padding-bottom: 20px; height: 100%;">
+      <div class="flex-container thumbnail" style="height: 100%; padding-bottom: 20px;">
         <img src="img/logo/guelph.png" alt="University of Guelph logo" style="display:flex; align-items: flex-start;">
         <div style="display:flex; flex-direction: column; align-items: flex-end; height:80%">
           <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0; font-size: 13px; margin-top: 15px"><strong>Work-Study Student</strong></p>
@@ -346,18 +175,52 @@
         </div>
       </div>
     </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+      <div class="flex-container thumbnail" style="height: 100%; padding-bottom: 20px;">
+        <img src="img/logo/sri.png" alt="Sunnybrook Health Sciences Center logo" style="display:flex; align-items: flex-start;">
+        <div style="display:flex; flex-direction: column; align-items: flex-end; height:80%">
+          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0; font-size: 13px; margin-top: 15px"><strong>Co-op Student Developer</strong></p>
+          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 w3-opacity" style="padding:0; font-size: 9px"><i class="fa fa-map-marker"></i>&nbsp&nbsp Toronto, Ontario</p>
+          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 w3-opacity" style="padding:0; font-size: 9px"><i class="fa fa-calendar"></i>&nbsp&nbsp May - Dec 2019</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+      <div class="flex-container thumbnail" style="height: 100%; padding-bottom: 20px;">
+        <img src="img/logo/guelph.png" alt="University of Guelph logo" style="display:flex; align-items: flex-start;">
+        <div style="display:flex; flex-direction: column; align-items: flex-end; height:80%">
+          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0; font-size: 13px; margin-top: 15px"><strong>Undergraduate Research Assistant</strong></p>
+          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 w3-opacity" style="padding:0; font-size: 9px"><i class="fa fa-map-marker"></i>&nbsp&nbsp Guelph, Ontario</p>
+          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 w3-opacity" style="padding:0; font-size: 9px"><i class="fa fa-calendar"></i>&nbsp&nbsp May - Aug 2020</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="height: 100%;">
+      <div class="flex-container thumbnail" style="height: 100%; padding-bottom: 20px;">
+        <img src="img/logo/caseware.png" alt="CaseWare International Inc logo" style="display:flex; align-items: flex-start;">
+        <div style="flex-direction: column; height:80%; display:flex; align-items: flex-end;">
+          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0; font-size: 13px; margin-top: 15px"><strong>Software Developer</strong></p>
+          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 w3-opacity" style="padding:0; font-size: 9px"><i class="fa fa-map-marker"></i>&nbsp&nbsp Toronto, Ontario</p>
+          <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 w3-opacity" style="padding:0; font-size: 9px"><i class="fa fa-calendar"></i>&nbsp&nbsp Jan - Aug 2021</p>
+        </div>
+      </div>
+    </div>    
   </div>
 </div>
 
-<div class="container-fluid container bg-4 text-center" id="what" style="padding-bottom: 10vh">    
-  <h3 style="letter-spacing: 4px;">What I've Made</h3><br>
+<div class="container-fluid container bg-4 text-center" id="what" style="padding-top: 0vh; padding-bottom: 10vh;">    
+  <hr><br><br>
+  <h3 style="letter-spacing: 1vw;">WHAT I'VE MADE</h3><br>
   <img src="img/icon/underconstruction.gif" alt="Under Construction" width="170" class="image">
   <h6 class="text-center"><i>This section is under construction.</i></h6>
 </div>
 
 <!-- Footer -->
-<footer id="footer" class="container-fluid bg-5 text-center text-muted" style="padding-bottom: 1vh;">
-  <p style="font-size:x-small; letter-spacing: 4px;"><strong>DIMA ISMAIL</strong></p>
+<footer id="footer" class="bg-2 text-center text-muted" style="background-color: #19181b;padding-bottom: 1vh; padding-top: 3vh;">
+  <p style="font-size:x-small; letter-spacing: 0.4vw; margin-bottom: 0;"><strong>DIMA ISMAIL</strong></p>
   <p style="color:#9c9c9c; font-size: x-small;">Made with <i class="fa fa-heart" aria-hidden="true"></i> & Bootstrap </p>
 </footer>
 
