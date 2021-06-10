@@ -24,21 +24,25 @@
   .bg-1 { 
     background-color: #19181b; /* Green */
     color: #dddddd;
+    border: 0;
   }
   .bg-2 { 
     background-color: #1e1d20; /* Dark Blue */
     color: #c2c2c2;
     width: 100%;
+    border: 0;
   }
   .bg-3 { 
     background-color: #1e1d20; /* White */
     color: #c2c2c2;
     width: 100%;
+    border: 0;
   }
   .bg-4 { 
     background-color: #1e1d20; /* Black Gray */
     color: #c2c2c2;
     width: 100%;
+    border: 0;
   }
   .container-fluid {
     padding-top: 70px;
@@ -121,7 +125,7 @@
       </a>
     </div>
 
-    <ul class="nav navbar-nav navbar-right" style="text-align: right;">
+    <ul class="nav navbar-nav navbar-right hidden-xs" style="text-align: right;">
       <li><a href="#who">WHO</a></li>
       <li><a href="#where">WHERE</a></li>
       <li><a href="#what">WHAT</a></li>
@@ -154,7 +158,7 @@
 <!-- Second Container -->
 <div class="container-fluid container bg-2 text-center" id="who" style="padding-bottom: 0vh;">
   <h3 class="margin" style="letter-spacing: 1vw;">WHO I AM</h3>
-  <p>Hi! I'm <b>Dima</b> - a Systems Engineering graduate from the University of Guelph!</p>
+  <p style="text-align: justify ;margin-top: 15px; margin-left: 15vw; margin-right: 10vw;">Hi! I'm <b>Dima</b> - a Systems Engineering graduate from the University of Guelph!</p>
   <p style="text-align: justify ;margin-top: 15px; margin-left: 15vw; margin-right: 10vw;">I enjoy tinkering with various software and hardware toys and tools, and take special interest in <b>software development</b>, particularily in applications of <b>machine learning</b> and <b>fintech</b>. In my painfully limited free time, you can find me attending hackathons, engineering competitions, or tending to personal projects.</p>
 </div>
 
@@ -165,7 +169,7 @@
   <h4>Co-op Placements & Internships</h4>
   <br>
   <div class="row text-center" style="height: 100%;">  
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="padding-bottom: 20px; height: 100%;">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom: 20px; height: 100%;">
       <div class="flex-container thumbnail" style="height: 100%; padding-bottom: 20px;">
         <img src="img/logo/guelph.png" alt="University of Guelph logo" style="display:flex; align-items: flex-start;">
         <div style="display:flex; flex-direction: column; align-items: flex-end; height:80%">
@@ -176,7 +180,7 @@
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom: 20px; height: 100%;">
       <div class="flex-container thumbnail" style="height: 100%; padding-bottom: 20px;">
         <img src="img/logo/sri.png" alt="Sunnybrook Health Sciences Center logo" style="display:flex; align-items: flex-start;">
         <div style="display:flex; flex-direction: column; align-items: flex-end; height:80%">
@@ -187,7 +191,7 @@
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom: 20px; height: 100%;">
       <div class="flex-container thumbnail" style="height: 100%; padding-bottom: 20px;">
         <img src="img/logo/guelph.png" alt="University of Guelph logo" style="display:flex; align-items: flex-start;">
         <div style="display:flex; flex-direction: column; align-items: flex-end; height:80%">
@@ -198,7 +202,7 @@
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="height: 100%;">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom: 20px; height: 100%;">
       <div class="flex-container thumbnail" style="height: 100%; padding-bottom: 20px;">
         <img src="img/logo/caseware.png" alt="CaseWare International Inc logo" style="display:flex; align-items: flex-start;">
         <div style="flex-direction: column; height:80%; display:flex; align-items: flex-end;">
@@ -211,8 +215,9 @@
   </div>
 </div>
 
-<div class="container-fluid container bg-4 text-center" id="what" style="padding-top: 0vh; padding-bottom: 10vh;">    
-  <hr><br><br>
+<div class="container-fluid container bg-4 text-center" id="what" style="padding-left: 20vw; padding-right: 20vw; padding-top: 0vh; padding-bottom: 10vh;">    
+  <hr>
+  <br>
   <h3 style="letter-spacing: 1vw;">WHAT I'VE MADE</h3><br>
   <img src="img/icon/underconstruction.gif" alt="Under Construction" width="170" class="image">
   <h6 class="text-center"><i>This section is under construction.</i></h6>
